@@ -10,8 +10,7 @@ namespace Homework_6._1
 {
     public class DatabaseService
     {
-        //public enum Menu { Register = 1, Login, Exit }
-
+       
         DbContextOptions<ApplicationContext> options;
 
         public void EnsurePopulated()
