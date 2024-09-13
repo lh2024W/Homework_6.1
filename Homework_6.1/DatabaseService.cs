@@ -99,11 +99,11 @@ namespace Homework_6._1
         }
 
         //7. Получить самого молодого студента.
-        public void GetMaxAgeAllStudents()
+        public void GetMinAgeAllStudents()
         {
             using (ApplicationContext db = new ApplicationContext(options))
             {
-                var maxAgeAllStudents = db.Students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
+                var minAgeAllStudents = db.Students.OrderBy(s => s.DateOfBirth).FirstOrDefault();
             }
         }
 
